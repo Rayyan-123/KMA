@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="logo.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Karachi Martial Arts Center</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Teko:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-sans antialiased text-gray-900 bg-white flex flex-col min-h-screen">
+    <div id="app" class="flex-grow">
+        <!-- Navigation (Solid) -->
+        <nav class="bg-primary text-white p-6 shadow-md transition-all duration-300">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="logo.webp" alt="KMA Logo" class="h-12 w-12 rounded-full bg-white p-0.5" />
+                    <span class="font-heading text-3xl font-bold uppercase tracking-wide">Karachi Martial Arts</span>
+                </a>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="hover:text-accent transition font-bold uppercase tracking-wide">Home</a>
+                    <a href="programs.html"
+                        class="hover:text-accent transition font-bold uppercase tracking-wide">Programs</a>
+                    <a href="schedule.html"
+                        class="hover:text-accent transition font-bold uppercase tracking-wide">Schedule</a>
+                    <a href="about.html" class="hover:text-accent transition font-bold uppercase tracking-wide">About
+                        Us</a>
+                    <a href="contact.html"
+                        class="font-bold border-b-2 border-accent text-accent font-heading text-xl uppercase tracking-wide">Contact</a>
+                    <a href="contact.html"
+                        class="bg-accent text-white px-8 py-2 font-heading text-xl transform -skew-x-12 hover:bg-white hover:text-primary transition shadow-lg uppercase tracking-wider">
+                        <span class="block transform skew-x-12">Book Free Trial</span>
+                    </a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="lg:hidden focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="hidden lg:hidden mt-4 pb-4 bg-primary/95 rounded-sm p-4 shadow-xl border-t-4 border-accent">
+                <a href="index.html"
+                    class="block py-3 border-b border-blue-400 font-heading text-2xl uppercase">Home</a>
+                <a href="programs.html"
+                    class="block py-3 border-b border-blue-400 font-heading text-2xl uppercase">Programs</a>
+                <a href="schedule.html"
+                    class="block py-3 border-b border-blue-400 font-heading text-2xl uppercase">Schedule</a>
+                <a href="about.html" class="block py-3 border-b border-blue-400 font-heading text-2xl uppercase">About
+                    Us</a>
+                <a href="contact.html" class="block py-3 font-heading text-2xl uppercase text-accent">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Use Flex container for the main content to split Map and Form side-by-side on desktop if needed, or stick to column -->
+        <section class="py-20 bg-gray-50 border-b-4 border-accent">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h1
+                        class="font-heading text-6xl md:text-8xl font-bold uppercase tracking-tighter text-gray-900 mb-4">
+                        Get In <span class="text-primary">Touch</span></h1>
+                    <div class="h-2 w-32 bg-accent mx-auto mb-6 transform -skew-x-12"></div>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-xl font-light">Ready to start your journey?
+                        Contact us for a free trial or visit our location.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-0 bg-white shadow-2xl border-2 border-gray-100">
+                    <!-- Contact Info & Map -->
+                    <div class="bg-gray-900 text-white p-12 flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-2xl font-bold uppercase mb-8">Location & Hours</h2>
+                            <div class="space-y-6">
+                                <div class="flex items-start gap-4">
+                                    <svg class="w-6 h-6 text-primary mt-1" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                        </path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                    <div>
+                                        <p class="font-bold" id="contact-address">Loading Address...</p>
+                                        <p class="text-gray-400 text-sm mt-1">Karachi, Pakistan</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <svg class="w-6 h-6 text-primary mt-1" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                    <p id="contact-email">Loading Email...</p>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <svg class="w-6 h-6 text-primary mt-1" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                        </path>
+                                    </svg>
+                                    <p id="contact-phone">Loading Phone...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 h-48 bg-gray-800 rounded-lg overflow-hidden relative">
+                            <!-- Google Maps Embed Placeholder -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14480.0!2d67.0!3d24.8607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDUxJzM4LjUiTiA2N8KwMDAnMDAuMCJF!5e0!3m2!1sen!2s!4v1612345678901!5m2!1sen!2s"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="p-12">
+                        <h2 class="text-2xl font-bold uppercase mb-6 text-gray-900">Send us a Message</h2>
+                        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="space-y-6">
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+                                <input
+                                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-primary focus:bg-white focus:outline-none transition"
+                                    id="name" name="name" type="text" placeholder="Your Name" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+                                <input
+                                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-primary focus:bg-white focus:outline-none transition"
+                                    id="email" name="email" type="email" placeholder="your@email.com" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="interest">Interested
+                                    In</label>
+                                <select
+                                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-primary focus:bg-white focus:outline-none transition"
+                                    id="interest" name="interest">
+                                    <option value="Kids">Kids Martial Arts</option>
+                                    <option value="Adults">Adult Kickboxing</option>
+                                    <option value="Private">Private Training</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
+                                <textarea
+                                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-primary focus:bg-white focus:outline-none transition"
+                                    id="message" name="message" rows="4" placeholder="How can we help?"
+                                    required></textarea>
+                            </div>
+                            <button
+                                class="w-full bg-primary hover:bg-blue-700 text-white font-bold py-4 rounded-full shadow-lg transition uppercase tracking-widest text-sm"
+                                type="submit">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 border-t border-gray-800 text-gray-400 py-12 mt-auto">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-center md:text-left">
+                    <a href="index.html"
+                        class="text-2xl font-bold text-white uppercase tracking-wider block mb-2">Karachi Martial
+                        Arts</a>
+                    <p class="text-sm">Empowering lives through discipline and fitness.</p>
+                </div>
+                <div class="flex gap-6 text-sm font-medium">
+                    <a href="programs.html" class="hover:text-white transition">Programs</a>
+                    <a href="schedule.html" class="hover:text-white transition">Schedule</a>
+                    <a href="about.html" class="hover:text-white transition">About</a>
+                    <a href="contact.html" class="hover:text-white transition">Contact</a>
+                </div>
+                <div class="text-sm">
+                    &copy; 2026 KMA Center. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>

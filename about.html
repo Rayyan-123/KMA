@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="logo.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Karachi Martial Arts Center</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Teko:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-sans antialiased text-gray-900 bg-white flex flex-col min-h-screen">
+    <div id="app" class="flex-grow">
+        <!-- Navigation (Solid) -->
+        <nav class="bg-primary text-white p-6 shadow-md transition-all duration-300">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="logo.webp" alt="KMA Logo" class="h-12 w-12 rounded-full bg-white p-0.5" />
+                    <span class="font-heading text-3xl font-bold uppercase tracking-wide">Karachi Martial Arts</span>
+                </a>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="hover:text-accent transition font-bold uppercase tracking-wide">Home</a>
+                    <a href="programs.html"
+                        class="hover:text-accent transition font-bold uppercase tracking-wide">Programs</a>
+                    <a href="schedule.html"
+                        class="hover:text-accent transition font-bold uppercase tracking-wide">Schedule</a>
+                    <a href="about.html"
+                        class="font-bold border-b-2 border-accent text-accent font-heading text-xl uppercase tracking-wide">About
+                        Us</a>
+                    <a href="contact.html"
+                        class="hover:text-accent transition font-bold uppercase tracking-wide">Contact</a>
+                    <a href="contact.html"
+                        class="bg-accent text-white px-8 py-2 font-heading text-xl transform -skew-x-12 hover:bg-white hover:text-primary transition shadow-lg uppercase tracking-wider">
+                        <span class="block transform skew-x-12">Book Free Trial</span>
+                    </a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="lg:hidden focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="hidden lg:hidden mt-4 pb-4 bg-primary/95 rounded-sm p-4 shadow-xl border-t-4 border-accent">
+                <a href="index.html"
+                    class="block py-3 border-b border-blue-400 font-heading text-2xl uppercase">Home</a>
+                <a href="programs.html"
+                    class="block py-3 border-b border-blue-400 font-heading text-2xl uppercase">Programs</a>
+                <a href="schedule.html"
+                    class="block py-3 border-b border-blue-400 font-heading text-2xl uppercase">Schedule</a>
+                <a href="about.html"
+                    class="block py-3 border-b border-blue-400 font-heading text-2xl uppercase text-accent">About Us</a>
+                <a href="contact.html" class="block py-3 font-heading text-2xl uppercase">Contact</a>
+            </div>
+        </nav>
+
+        <!-- About Hero -->
+        <section class="bg-gray-100 py-20 text-center border-b-4 border-accent">
+            <div class="container mx-auto px-4">
+                <h1 class="font-heading text-6xl md:text-8xl font-bold text-gray-900 uppercase tracking-tighter mb-4">
+                    About <span class="text-primary">Us</span></h1>
+                <div class="h-2 w-32 bg-accent mx-auto mb-6 transform -skew-x-12"></div>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto font-light">More than just a gym. We are a community
+                    dedicated to growth and excellence.</p>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="font-heading text-5xl font-bold mb-6 text-primary uppercase">Our Philosophy</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        At Karachi Martial Arts Center, we believe that martial arts is a vehicle for personal
+                        development.
+                        Our "Developed for Kids" and "Certified for Adults" programs ensure that every student receives
+                        the highest quality instruction tailored to their age and ability.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        We blend traditional martial arts discipline with strict adherence to **Islamic principles of
+                        modesty and ethics**. We offer **segregated training sessions** to ensure a comfortable and
+                        private environment for all our members, allowing everyone to train with confidence and peace of
+                        mind.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="bg-blue-50 p-6 transform -skew-x-6 border-l-4 border-primary">
+                            <span
+                                class="block font-heading text-5xl font-bold text-primary mb-1 transform skew-x-6">10+</span>
+                            <span class="text-sm text-gray-600 uppercase font-bold transform skew-x-6 block">Years
+                                Experience</span>
+                        </div>
+                        <div class="bg-blue-50 p-6 transform -skew-x-6 border-l-4 border-primary">
+                            <span
+                                class="block font-heading text-5xl font-bold text-primary mb-1 transform skew-x-6">500+</span>
+                            <span
+                                class="text-sm text-gray-600 uppercase font-bold transform skew-x-6 block">Students</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative p-4">
+                    <div class="absolute inset-0 bg-accent/10 transform rotate-3 -z-10"></div>
+                    <!-- Modest Image: Focus on Black Belt / Uniform Detail, no person -->
+                    <img src="https://images.unsplash.com/photo-1544117519-31a4b719223d?q=80&w=2552&auto=format&fit=crop"
+                        class="w-full shadow-2xl border-4 border-white transform -rotate-2" alt="Black Belt Uniform">
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 border-t border-gray-800 text-gray-400 py-12 mt-auto">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-center md:text-left">
+                    <a href="index.html"
+                        class="text-2xl font-bold text-white uppercase tracking-wider block mb-2">Karachi Martial
+                        Arts</a>
+                    <p class="text-sm">Empowering lives through discipline and fitness.</p>
+                </div>
+                <div class="flex gap-6 text-sm font-medium">
+                    <a href="programs.html" class="hover:text-white transition">Programs</a>
+                    <a href="schedule.html" class="hover:text-white transition">Schedule</a>
+                    <a href="about.html" class="hover:text-white transition">About</a>
+                    <a href="contact.html" class="hover:text-white transition">Contact</a>
+                </div>
+                <div class="text-sm">
+                    &copy; 2026 KMA Center. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>

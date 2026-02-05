@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="logo.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule | Karachi Martial Arts Center</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Teko:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-sans antialiased text-gray-900 bg-white flex flex-col min-h-screen">
+    <div id="app" class="flex-grow">
+        <!-- Navigation (Solid) -->
+        <nav class="bg-primary text-white p-6 shadow-md transition-all duration-300">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="logo.webp" alt="KMA Logo" class="h-12 w-12 rounded-full bg-white p-0.5" />
+                    <span class="font-heading text-3xl font-bold uppercase tracking-wide">Karachi Martial Arts</span>
+                </a>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="hover:text-accent transition font-bold uppercase tracking-wide">Home</a>
+                    <a href="programs.html"
+                        class="hover:text-accent transition font-bold uppercase tracking-wide">Programs</a>
+                    <a href="schedule.html"
+                        class="font-bold border-b-2 border-accent text-accent font-heading text-xl uppercase tracking-wide">Schedule</a>
+                    <a href="about.html" class="hover:text-accent transition font-bold uppercase tracking-wide">About
+                        Us</a>
+                    <a href="contact.html"
+                        class="hover:text-accent transition font-bold uppercase tracking-wide">Contact</a>
+                    <a href="contact.html"
+                        class="bg-accent text-white px-8 py-2 font-heading text-xl transform -skew-x-12 hover:bg-white hover:text-primary transition shadow-lg uppercase tracking-wider">
+                        <span class="block transform skew-x-12">Book Free Trial</span>
+                    </a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="lg:hidden focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="hidden lg:hidden mt-4 pb-4 bg-primary/95 rounded-sm p-4 shadow-xl border-t-4 border-accent">
+                <a href="index.html"
+                    class="block py-3 border-b border-blue-400 font-heading text-2xl uppercase">Home</a>
+                <a href="programs.html"
+                    class="block py-3 border-b border-blue-400 font-heading text-2xl uppercase">Programs</a>
+                <a href="schedule.html"
+                    class="block py-3 border-b border-blue-400 font-heading text-2xl uppercase text-accent">Schedule</a>
+                <a href="about.html" class="block py-3 border-b border-blue-400 font-heading text-2xl uppercase">About
+                    Us</a>
+                <a href="contact.html" class="block py-3 font-heading text-2xl uppercase">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Schedule Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h1
+                        class="font-heading text-5xl md:text-7xl font-bold text-gray-900 uppercase tracking-tighter mb-4">
+                        Class <span class="text-primary">Schedule</span></h1>
+                    <div class="h-2 w-24 bg-accent mx-auto mb-6 transform -skew-x-12"></div>
+                </div>
+
+                <div class="overflow-x-auto bg-white shadow-xl border-t-4 border-primary">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-dark text-white font-heading text-xl uppercase tracking-wider">
+                                <th class="p-5 border-b-2 border-accent">Time</th>
+                                <th class="p-4 border-b border-blue-800">Monday</th>
+                                <th class="p-4 border-b border-blue-800">Tuesday</th>
+                                <th class="p-4 border-b border-blue-800">Wednesday</th>
+                                <th class="p-4 border-b border-blue-800">Thursday</th>
+                                <th class="p-4 border-b border-blue-800">Friday</th>
+                                <th class="p-4 border-b border-blue-800">Saturday</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm text-gray-700">
+                            <!-- 4:00 PM Slot -->
+                            <tr class="hover:bg-gray-50 border-b">
+                                <td class="p-4 font-bold text-primary">4:00 PM</td>
+                                <td class="p-4">Kids (Beginner)</td>
+                                <td class="p-4">Kids (Advanced)</td>
+                                <td class="p-4">Kids (Beginner)</td>
+                                <td class="p-4">Kids (Advanced)</td>
+                                <td class="p-4">Sparring</td>
+                                <td class="p-4">Open Mat</td>
+                            </tr>
+                            <!-- 5:00 PM Slot -->
+                            <tr class="hover:bg-gray-50 border-b">
+                                <td class="p-4 font-bold text-primary">5:00 PM</td>
+                                <td class="p-4">Kids (Advanced)</td>
+                                <td class="p-4">Kids (Beginner)</td>
+                                <td class="p-4">Kids (Advanced)</td>
+                                <td class="p-4">Kids (Beginner)</td>
+                                <td class="p-4">All Levels</td>
+                                <td class="p-4">-</td>
+                            </tr>
+                            <!-- 6:00 PM Slot -->
+                            <tr class="hover:bg-gray-50 border-b">
+                                <td class="p-4 font-bold text-primary">6:00 PM</td>
+                                <td class="p-4">Teens Class</td>
+                                <td class="p-4">Teens Class</td>
+                                <td class="p-4">Teens Class</td>
+                                <td class="p-4">Teens Class</td>
+                                <td class="p-4">Performance</td>
+                                <td class="p-4">-</td>
+                            </tr>
+                            <!-- 7:00 PM Slot -->
+                            <tr class="hover:bg-gray-50 border-b">
+                                <td class="p-4 font-bold text-primary">7:00 PM</td>
+                                <td class="p-4 font-bold text-gray-900">Adult Kickboxing</td>
+                                <td class="p-4">Adult Self-Defense</td>
+                                <td class="p-4 font-bold text-gray-900">Adult Kickboxing</td>
+                                <td class="p-4">Adult Self-Defense</td>
+                                <td class="p-4">Fight Team</td>
+                                <td class="p-4">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600 mb-6">Schedule is subject to change. Please contact us for the latest
+                        updates.</p>
+                    <a href="contact.html"
+                        class="inline-block bg-gray-900 text-white font-bold py-3 px-8 rounded-full hover:bg-primary transition shadow-lg uppercase tracking-wide">Contact
+                        Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 border-t border-gray-800 text-gray-400 py-12 mt-auto">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-center md:text-left">
+                    <a href="index.html"
+                        class="text-2xl font-bold text-white uppercase tracking-wider block mb-2">Karachi Martial
+                        Arts</a>
+                    <p class="text-sm">Empowering lives through discipline and fitness.</p>
+                </div>
+                <div class="flex gap-6 text-sm font-medium">
+                    <a href="programs.html" class="hover:text-white transition">Programs</a>
+                    <a href="schedule.html" class="hover:text-white transition">Schedule</a>
+                    <a href="about.html" class="hover:text-white transition">About</a>
+                    <a href="contact.html" class="hover:text-white transition">Contact</a>
+                </div>
+                <div class="text-sm">
+                    &copy; 2026 KMA Center. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
