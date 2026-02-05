@@ -20,6 +20,5 @@ module.exports = {
             heading: ['Teko', 'sans-serif'], // New Headline Font
         },
     },
-},
     plugins: [],
 }
